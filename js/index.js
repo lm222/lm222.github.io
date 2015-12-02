@@ -64,6 +64,10 @@ $(document).ready(function(){
       })
       });
 
+      $.getJSON("http://dogepoet.aaroniles.net/api/verse/verse/finale" , function(json) {
+         console.log(json);
+      });
+
       
 
 });
