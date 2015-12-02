@@ -64,10 +64,22 @@ $(document).ready(function(){
       })
       });
 
-      $.getJSON("http://dogepoet.aaroniles.net/api/verse/verse/finale" , function(json) {
-         console.log(json);
-      });
+     $().ready(function () {
+      var url = 'http://dogepoet.aaroniles.net/api/verse/verse/finale';
 
+      // $.get(url, function (data) {
+      //   console.log('working')
+      // });
+
+      $.ajax({
+        url: url,
+        type: "GET",
+        dataType: 'jsonp',
+        success: function(data){
+          console.log(data);
+        }
+      });
+});
       
 
 });
