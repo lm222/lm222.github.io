@@ -1,42 +1,11 @@
 *{font-family: 'Open Sans', sans-serif;}
 
+/*jquery scroll css*/
+
 body {
 	background: #fff;
 	margin: 0;
 	min-width: 320px;
-}
-
-h1,
-h2,
-h3 {
-	margin: 0 auto;
-	font-family:'Open Sans', sans-serif;
-	text-align: center;
-}
-
-button {
-	border: 1px solid #fff;
-	border-radius: 5px;
-	color: #fff;
-	opacity: .8;
-	font-size: 20px;
-	cursor: pointer;
-	padding: 10px 20px;
-	z-index: 10;
-}
-button:hover{
-	opacity: 1;
-}
-.over{
-	text-align: center;
-	width: 1024px;
-	margin-top: 200px;
-}
-
-.over button{
-	display: inline-block;
-	z-index: 100;
-	position: relative;
 }
 
 .scroll-off {
@@ -52,11 +21,16 @@ button:hover{
 	max-width: 1024px;
 }
 
-
-
-
 /*My stuff*/
-	
+
+h1,
+h2,
+h3 {
+	margin: 0 auto;
+	font-family:'Open Sans', sans-serif;
+	text-align: center;
+}	
+
 h1{
 	color: gray;
 	width: 100%;
@@ -64,19 +38,52 @@ h1{
 	text-align: center;
 	padding: 30px 0;
 }
+
  h1.other{
  	padding-bottom: 8px;
  }
-
 
 h2{
 	color: gray;
 	font-weight: 200;
 	padding-bottom: 20px;
 }
+
 h3{
 	font-size: 14px;
 	font-weight: 200;
+}
+
+h5{
+	font-size: 12px;
+	font-weight: 300;
+}
+
+button {
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	opacity: .8;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 10px 20px;
+	z-index: 10;
+}
+
+button:hover{
+	opacity: 1;
+}
+
+.over{
+	text-align: center;
+	width: 1024px;
+	margin-top: 200px;
+}
+
+.over button{
+	display: inline-block;
+	z-index: 100;
+	position: relative;
 }
 
 .video-container{
@@ -105,11 +112,13 @@ video {
 	display: block;
 	margin-top: 109px;
 }
+
 video.fillWidth {
 	width: 100%;
 	height: auto;
 	max-height: 900px;
 }
+
 .machine{
 	text-align: center;
 	background-image: url("../images/machinetest2.png");
@@ -120,7 +129,6 @@ video.fillWidth {
 	margin-top: 20px;
 }
 
-
 .img_wrap{
 	text-align: left;
 	height: 275px;
@@ -129,61 +137,59 @@ video.fillWidth {
 	display: block;
 	position: absolute;
 }
+
 .img_wrap#dot{
 	margin-top: 275px;
 }
+
 .img_wrap:hover{
 	cursor: pointer;
 }
 
-h5{
-	font-size: 12px;
-	font-weight: 300;
-}
-
 .caption{
 	color: white;
-    width: 200px;
-    padding-left: 50px;
-    margin-top: -19px;
+	width: 200px;
+	padding-left: 50px;
+	margin-top: -19px;
 }
 .caption#dot-caption{
 	margin-left: 136px;
-    margin-top: 106px;
-    display: inline-block;
-/*    width: 100px;*/
+  margin-top: 106px;
+  display: inline-block;
 }
+
 .img_wrap img{
 	cursor: pointer;
 	height: 225px;
-    z-index: 300;
-    display: block;
-    margin-top: -62px;
-    margin-left: 18px;
-    margin-bottom: 96px;
+  z-index: 300;
+  display: block;
+  margin-top: -62px;
+  margin-left: 18px;
+  margin-bottom: 96px;
 }
+
 .img_wrap .dots{
 	position: absolute;
-    margin-left: 112px;
-    margin-top: -105px;
-
+  margin-left: 112px;
+  margin-top: -105px;
 }
+
 .img_wrap#smoke{
 	position: absolute;
 	margin-left: 328px;
-    margin-top: 237px;
-    overflow: auto;
+	margin-top: 237px;
+	overflow: auto;
 }
 
 .caption#smoke-caption{
 	margin-top: -23px;
-    margin-left: 55px;
+  margin-left: 55px;
 }
 
 .move.smoke{
 	height: 80px;
-    margin-top: 10px;
-    opacity: .5;
+  margin-top: 10px;
+  opacity: .5;
 }
 
 .move.smoke{
@@ -201,11 +207,11 @@ h5{
 .img_wrap#bird{
 	position: absolute;
 	margin-left: 558px;
-    margin-top: 234px;
+  margin-top: 234px;
 }
 .caption#bird-caption{
 	margin-left: 105px;
-    margin-top: 42px;
+  margin-top: 42px;
 }
 .img_wrap#bird img{
 	margin-top: -120px;
@@ -221,23 +227,26 @@ h5{
 .img_wrap#rays{
 	position: absolute;
 	margin-left: 740px;
-    margin-top: 62px;
+  margin-top: 62px;
 }
 
 .caption#rays-caption{
 	margin-top: 23px;
-    margin-left: -20px;
+  margin-left: -20px;
 }
 
 .move.rays{
 	height: 80px;
-    margin-top: -15px;
-    opacity: .5;
+  margin-top: -15px;
+  opacity: .5;
 }
 
 .move.rays{
 	display: none;
 }
+
+/*hover effects*/
+
 .static .move{
 	display: none;
 }
@@ -246,15 +255,14 @@ h5{
 }
 
 .animated .stop{
-    display: none;
+  display: none;
 }
 .animated .move{ 
-    display: inline;
+  display: inline;
 }
 .animated .caption{
 	color: black;
 }
-
 
 .phone{
 	text-align: center;
@@ -305,6 +313,7 @@ h5{
 	cursor: pointer;
 	position: relative;
 }
+
 #left-a{
 	margin-right: 620px;
 }
@@ -317,12 +326,13 @@ h5{
 	width: 280px;
 	color: white;
 }
+
 .quote{
 	padding: 20px;
 	float: right;
 	margin-top: 40px;
-
 }
+
 .arrow_box:after, .arrow_box:before {
 	right: 100%;
 	top: 50%;
@@ -339,11 +349,13 @@ h5{
 	border-width: 30px;
 	margin-top: -30px;
 }
+
 .arrow_box:before {
 	border-right-color: #0D5285;
 	border-width: 36px;
 	margin-top: -36px;
 }
+
 .button #word{
 	color: #5E3E58;
 	border: none;
@@ -355,6 +367,7 @@ h5{
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+
 .boy{
 	background-image: url("../images/boy.png");
 }

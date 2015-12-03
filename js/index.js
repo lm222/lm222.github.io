@@ -48,12 +48,13 @@ $(document).ready(function(){
 
 
     function backwardsImage() {
-    currentImageKey();
-    if (i == 0) {
-    changeImage(images.length - 1);
-    } else {
-    changeImage(i - 1);
-    }
+        currentImageKey();
+        if (i == 0) {
+            changeImage(images.length - 1);
+        } 
+        else {
+        changeImage(i - 1);
+        }
     };
 
     //animate gif on hover
