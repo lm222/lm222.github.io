@@ -77,7 +77,7 @@ $(document).ready(function(){
         jsonp: 'callback',
         dataType: 'jsonp',
           success: function(data){
-            $('#random-word').text(data["Word"]);
+            $('#random-word').text(data["Word"] + '!');
           }
         })
       });
