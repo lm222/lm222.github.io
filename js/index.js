@@ -84,8 +84,9 @@ $(document).ready(function(){
     });
 
     $('#word').click(function(){
-        $(".girl").toggleClass('boy', 'girl');
+        $(".girl").toggleClass('boy', 'girl', 'man');
     })
+    
 
 });
 
