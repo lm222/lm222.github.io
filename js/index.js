@@ -68,7 +68,7 @@ $(document).ready(function(){
       //random word
 
       // $(function(){
-      $('#random-word').text("inspiring");
+      $('#random-word').text("inspiring!");
 
       $('#word').click(function(){
       $.ajax({
