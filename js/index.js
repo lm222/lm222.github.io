@@ -59,28 +59,31 @@ $(document).ready(function(){
       //animate gif on hover
 
       $(function(){
-        $('#img_wrap').hover(function() {
+        $('.img_wrap').hover(function() {
          $(this).toggleClass('animated', 'static');
       })
       });
 
-     $().ready(function () {
-      var url = 'http://dogepoet.aaroniles.net/api/verse/verse/finale';
 
-      // $.get(url, function (data) {
-      //   console.log('working')
-      // });
+      //random word
 
+      // $(function(){
+      $('#random-word').text("inspiring");
+
+      $('#word').click(function(){
       $.ajax({
-        url: url,
-        type: "GET",
+        url: 'http://randomword.setgetgo.com/get.php',
+        method: 'GET',
+        jsonp: 'callback',
         dataType: 'jsonp',
-        success: function(data){
-          console.log(data);
-        }
+          success: function(data){
+            $('#random-word').text(data["Word"]);
+          }
+        })
       });
-});
-      
+      $('#word').click(function(){
+        $(".girl").toggleClass('boy', 'girl');
+      })
 
 });
 
