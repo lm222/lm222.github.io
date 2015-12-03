@@ -79,6 +79,12 @@ h3{
 	font-weight: 200;
 }
 
+.video-wrapper{
+	margin: 0-auto;
+	text-align: center;
+	width: 100%;
+}
+
 .video {
 	background-image: url("../images/comp.png");
 	background-size: cover;
@@ -89,18 +95,11 @@ h3{
 	width: 1000px;
 	margin-top: -285;
 }
-/*.video {
-	top:0%;
-	left:0%;
-	height:100%;
-	width:100%;
-	overflow: hidden;
-}*/
+
 video {
 	z-index:-1;
 	width: 577px;
 	max-height: 900px;
-	background: black;
 	text-align: center;
 	margin: 0 auto;
 	display: block;
